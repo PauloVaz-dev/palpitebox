@@ -20,8 +20,10 @@ const Index = () => {
         <Link href="pesquisa">
         <a className="bg-blue-400 px-6 py-4 font-bold rounded-lg shadow-lg hover:shadow">Dar opinião ou sugestão</a>
         </Link>
+        
       </div>
-      { !data && <a>Carregando</a>}
+      <div className="my-12 text-center">{ !data && <a>Carregando...</a>}</div>
+      
       { !error && data && data.showCoupon && 
         <p className="my-12 text-center">
           { data.message}
