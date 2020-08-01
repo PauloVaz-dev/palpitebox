@@ -10,10 +10,10 @@ const Footer = () => {
         <a className="hover:underline" href="https://www.linkedin.com/in/paulo-vaz-05296a46">Linkedin</a>
         <div>
           <a target="_blank" href="https://www.devpleno.com/">
-            <img className={styles.footer  } src="/logo_semana_fsm.png"/>
+            <img className={styles.footer + ' w-48' } src="/logo_semana_fsm.png"/>
           </a>
           <a target="_blank" href="https://www.devpleno.com/">
-            <img  className={styles.footer + ' ml-6'  } src="/logo_devpleno.png"/>
+            <img  className={styles.footer + ' sm:ml-6 w-48 sm:inline'  } src="/logo_devpleno.png"/>
           </a>
           
         </div>

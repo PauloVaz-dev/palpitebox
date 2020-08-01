@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <div>
        <PageTitle title="Home"/>
-      <p className="mt-12 text-center">
+      <p className="mt-12 ml-6 mr-6 text-center">
         O restaurante X sempre busca por atender melhor seus clientes. <br/>
         Por isso, estamos sempre abertos a ouvir a sua opinião
         </p>
@@ -25,7 +25,7 @@ const Index = () => {
       <div className="my-12 text-center">{ !data && <a>Carregando...</a>}</div>
       
       { !error && data && data.showCoupon && 
-        <p className="my-12 text-center">
+        <p className="my-12 ml-6 mr-6 text-center">
           { data.message}
         </p>
       }
