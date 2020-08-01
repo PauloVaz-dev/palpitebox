@@ -14,10 +14,12 @@ const Pesquisa = ()  => {
 
   const [ sucess, setSucess ] = useState(false)
   const [ retorno, setRetorno ] = useState({})
+  const [ loading, setLoading ] = useState(false)
 
   const notas = [0,1,2,3,4,5]
 
   const save = async () => {
+    
     const response = await fetch('api/save', {
       method: 'POST',
       body: JSON.stringify(form)
@@ -25,6 +27,7 @@ const Pesquisa = ()  => {
 
     const data = await response.json()
     setSucess(true)
+    setLoading(false)
     setRetorno(data)
   }
 
@@ -37,14 +40,15 @@ const Pesquisa = ()  => {
     }))
   }
   const { register, handleSubmit, errors } = useForm();
-  const onSubmit = data => save();
+  
+  const onSubmit = data => {
+    setLoading(true)
+    save();
+  }
 
   return (
     <div className="pt-6">
-      <PageTitle title="Pesquisa"/>
-      <div className={styles.coverspins}>
-           <div>Aguarde Carregando .....</div>
-      </div>
+      <PageTitle title="Pesquisa"/>      
       <h1 className="text-center font-bold my-4 text-2xl">Criticas e sugestões</h1>
         <p className="text-center mb-6">
           O restaurante X sempre busca por atender melhor seus clientes. <br/>
@@ -52,8 +56,8 @@ const Pesquisa = ()  => {
         </p>
         { !sucess &&
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="w-1/5 mx-auto teste">
-        <label className="font-bold">Seu nome {errors.nome && <span className={styles.errors}>Obrigatório</span>}</label>
+          <div className="w-64 mx-auto">
+            <label className="font-bold">Seu nome {errors.nome && <span className={styles.errors}>Obrigatório</span>}</label>
             <input 
             className="p-4 mb-2 block w-full shadow bg-blue-200 mt-2 rounded-lg" 
             type="text"  
@@ -62,10 +66,7 @@ const Pesquisa = ()  => {
             ref={register({
               required: true, 
               maxLength: 80, 
-              pattern: {
-                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                message: "Enter a valid e-mail address",
-              }})
+              })
             }
             value={form.nome}/>
             <label className="font-bold">Email {errors.email && <span className={styles.errors}>Obrigatório</span>}</label>
@@ -109,8 +110,15 @@ const Pesquisa = ()  => {
           <div className="text-center p-4 mb-6">
             {retorno.Promo}
           </div>
-        }
-      </div>
+        }       
+       
+        </div>
+        
+      }
+
+      {loading && 
+         <div className={styles.coverspin}>
+         </div>
       }
       
      
