@@ -9,6 +9,9 @@
 <img style="margin-left: 10px" src="./public/PaltiteBox-cupom.png" alt="drawing" height="500"/>
 </div>
 
+## Link do projeto
+https://palpitebox-gamma.vercel.app/pesquisa
+
 ## Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
