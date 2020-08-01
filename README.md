@@ -1,7 +1,9 @@
 <h1 align="center">PalpiteBox</h1>
-
-
 <br>
+
+## Objetivo
+
+<p>O projeto tem como objetivo fornecer um sistema a estabelecimentos comerciais no intuito que seus clientes possam opinar sobre o atendimento, produto etc. Em troca receberá um cupom (desconto, condição especial) </p>
 
 
 ## Tecnologias
@@ -9,7 +11,6 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Node.js](https://nodejs.org/en/)
-- [React](https://reactjs.org) - The React Framework.
 - [NextJs](https://nextjs.org/) - The React Framework.
 - [Figma](https://figma.com/) - Online prototyping tool.
 - [TailwindCSS ](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
