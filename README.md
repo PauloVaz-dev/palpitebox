@@ -8,6 +8,7 @@
 <img  src="./public/PaltiteBox-pesquisa.png" alt="drawing" height="500"/>
 <img style="margin-left: 10px" src="./public/PaltiteBox-cupom.png" alt="drawing" height="500"/>
 </div>
+
 ## Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
