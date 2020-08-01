@@ -5,8 +5,8 @@
 
 <p>O projeto tem como objetivo fornecer um sistema a estabelecimentos comerciais no intuito que seus clientes possam opinar sobre o atendimento, produto etc. Em troca receberá um cupom (desconto, condição especial) </p>
 <div style="display: flex; justify-content: center;">
-<img  src="./public/PaltiteBox-pesquisa.png" alt="drawing" height="200"/>
-<img style="margin-left: 10px" src="./public/PaltiteBox-cupom.png" alt="drawing" height="200"/>
+<img  src="./public/PaltiteBox-pesquisa.png" alt="drawing" height="500"/>
+<img style="margin-left: 10px" src="./public/PaltiteBox-cupom.png" alt="drawing" height="500"/>
 </div>
 ## Tecnologias
 
