@@ -1,16 +1,5 @@
 <h1 align="center">PalpiteBox</h1>
 
-<h4 align="center">
-  #DevPleno #FullstackMaster
-</h4>
-
-<p align="center">
-  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
 
 <br>
 
@@ -25,10 +14,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Figma](https://figma.com/) - Online prototyping tool.
 - [TailwindCSS ](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
 
-
-## Projeto
-
-O Palpitebox é um projeto que visa conectar pessoas que desejam fazer contribuições monetárias a ONG's (Organizações não governamentais) que precisam de ajuda.
 
 ### Pré-requisitos:
 
